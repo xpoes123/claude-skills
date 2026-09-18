@@ -18,6 +18,7 @@ with placeholders on purpose; fill in your own.
 | `memory-refresh` | Headless weekly sweep of Claude Code session transcripts to catch memory-worthy facts that didn't get saved live. Fans out one subagent per active project dir, synthesizes candidates against an existing memory index. |
 | `notify` | Ping a Discord bot (or any webhook) when a task finishes — quick ping vs. full brief, with rules for when NOT to notify (most turns shouldn't). |
 | `propose` | Instead of dumping a design/spec/options wall-of-text in chat, render an interactive reviewable HTML page (card-per-decision, react + copy-feedback) and link it. |
+| `vault-audit` | Find and bulk-fix Bitwarden vault hygiene problems — entries with no URI (why autofill "randomly" fails), reused/weak passwords, duplicates, stub entries. Repairs in place, no export/reimport. Works with `bw` or `rbw`. |
 | `weekly-audit` | Multi-agent weekly recap: parallel subagents for ops health, project activity, Claude Code usage stats, and a "coach" agent that turns the usage data into concrete next-step recommendations. |
 
 ## Commands
